@@ -30,7 +30,5 @@ java -jar target/population-analytics-1.0.0-SNAPSHOT.jar
 - `lk.datalanka.census.io` – `CsvRegionLoader`
 - `lk.datalanka.census.util` – `AgeBands`, `Formatting`, `Preconditions`
 
-### License
-MIT
 
 
