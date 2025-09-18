@@ -29,7 +29,7 @@ Legend: [ ] = pending, [x] = done, [~] = in progress
    - [ ] 5.2 Implement `DataAnalyzer` façade with strategy injection
 
 6. Analyses & DTOs
-   - [ ] 6.1 Implement `AgeGroupAnalysis` and `AgeGroupSummaryResult`
+   - [~] 6.1 Implement `AgeGroupAnalysis` and `AgeGroupSummaryResult`
    - [ ] 6.2 Implement `LiteracyAnalysis` and `LiteracySummaryResult`
    - [ ] 6.3 Implement `IncomeAnalysis` and `IncomeSummaryResult`
 
