@@ -9,7 +9,8 @@ import java.util.Scanner;
  */
 public final class Main {
 
-    private Main() {}
+    private Main() {
+    }
 
     public static void main(String[] args) {
         AppController controller = new AppController();
@@ -90,5 +91,3 @@ public final class Main {
         return Integer.parseInt(scanner.nextLine().trim());
     }
 }
-
-

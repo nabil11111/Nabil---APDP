@@ -47,5 +47,3 @@ class RegionFactoryTest {
         return ag;
     }
 }
-
-

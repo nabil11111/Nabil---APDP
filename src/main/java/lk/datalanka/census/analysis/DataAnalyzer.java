@@ -30,5 +30,3 @@ public final class DataAnalyzer {
         strategy.analyze(regions);
     }
 }
-
-

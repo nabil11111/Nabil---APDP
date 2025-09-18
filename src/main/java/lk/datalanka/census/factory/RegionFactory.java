@@ -24,11 +24,11 @@ public final class RegionFactory {
      * @return created region
      */
     public AbstractRegion createRegion(String type,
-                                       String name,
-                                       int population,
-                                       double literacyRate,
-                                       double averageIncome,
-                                       Map<String, Integer> ageGroups) {
+            String name,
+            int population,
+            double literacyRate,
+            double averageIncome,
+            Map<String, Integer> ageGroups) {
         Preconditions.check(type != null && !type.isBlank(), "type must be provided");
         String normalized = type.trim().toUpperCase();
         switch (normalized) {
@@ -41,5 +41,3 @@ public final class RegionFactory {
         }
     }
 }
-
-

@@ -16,5 +16,3 @@ public interface AnalysisStrategy {
      */
     void analyze(List<AbstractRegion> regions);
 }
-
-

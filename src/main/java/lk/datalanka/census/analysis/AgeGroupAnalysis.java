@@ -59,5 +59,3 @@ public final class AgeGroupAnalysis implements AnalysisStrategy {
         return result;
     }
 }
-
-

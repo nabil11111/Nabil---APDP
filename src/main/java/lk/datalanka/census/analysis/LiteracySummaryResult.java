@@ -15,9 +15,9 @@ public final class LiteracySummaryResult {
     private final List<String> bottomRegions;
 
     public LiteracySummaryResult(double nationalWeightedLiteracy,
-                                 Map<String, Double> literacyByRegion,
-                                 List<String> topRegions,
-                                 List<String> bottomRegions) {
+            Map<String, Double> literacyByRegion,
+            List<String> topRegions,
+            List<String> bottomRegions) {
         this.nationalWeightedLiteracy = nationalWeightedLiteracy;
         this.literacyByRegion = Collections.unmodifiableMap(new LinkedHashMap<>(literacyByRegion));
         this.topRegions = List.copyOf(topRegions);
@@ -40,5 +40,3 @@ public final class LiteracySummaryResult {
         return bottomRegions;
     }
 }
-
-

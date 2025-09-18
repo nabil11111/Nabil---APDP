@@ -7,8 +7,10 @@ import java.util.Objects;
 import lk.datalanka.census.util.Preconditions;
 
 /**
- * Immutable base type for a geographical region in the population analytics domain.
- * Instances are immutable: all fields are {@code private final} and exposed via accessors only.
+ * Immutable base type for a geographical region in the population analytics
+ * domain.
+ * Instances are immutable: all fields are {@code private final} and exposed via
+ * accessors only.
  */
 public abstract class AbstractRegion {
 
@@ -21,17 +23,18 @@ public abstract class AbstractRegion {
     /**
      * Creates a region after validating domain invariants.
      *
-     * @param name           non-null, non-blank region name
-     * @param population     population size (>= 0)
-     * @param literacyRate   literacy rate in percent within [0, 100]
-     * @param averageIncome  average monthly income in Rs. (>= 0)
-     * @param ageGroups      non-null map of age band label to count; sum(values) <= population
+     * @param name          non-null, non-blank region name
+     * @param population    population size (>= 0)
+     * @param literacyRate  literacy rate in percent within [0, 100]
+     * @param averageIncome average monthly income in Rs. (>= 0)
+     * @param ageGroups     non-null map of age band label to count; sum(values) <=
+     *                      population
      */
     protected AbstractRegion(String name,
-                             int population,
-                             double literacyRate,
-                             double averageIncome,
-                             Map<String, Integer> ageGroups) {
+            int population,
+            double literacyRate,
+            double averageIncome,
+            Map<String, Integer> ageGroups) {
         Preconditions.check(name != null && !name.isBlank(), "name must be provided");
         Preconditions.check(population >= 0, "population must be >= 0");
         Preconditions.check(literacyRate >= 0.0 && literacyRate <= 100.0,
@@ -77,8 +80,10 @@ public abstract class AbstractRegion {
 
     @Override
     public final boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         AbstractRegion that = (AbstractRegion) o;
         return population == that.population
                 && Double.compare(that.literacyRate, literacyRate) == 0
@@ -103,5 +108,3 @@ public abstract class AbstractRegion {
                 '}';
     }
 }
-
-

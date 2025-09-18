@@ -44,5 +44,3 @@ public final class IncomeAnalysis implements AnalysisStrategy {
         return result;
     }
 }
-
-

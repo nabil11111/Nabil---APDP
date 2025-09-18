@@ -48,7 +48,8 @@ public final class ReportGenerator {
                     String ageGroups = r.getAgeGroupDistribution().entrySet().stream()
                             .map(e -> e.getKey() + ":" + e.getValue())
                             .collect(Collectors.joining("|"));
-                    p.printRecord(r.getName(), r.getPopulationSize(), r.getLiteracyRate(), r.getAverageIncome(), ageGroups);
+                    p.printRecord(r.getName(), r.getPopulationSize(), r.getLiteracyRate(), r.getAverageIncome(),
+                            ageGroups);
                 }
             }
 
@@ -120,5 +121,3 @@ public final class ReportGenerator {
         return list;
     }
 }
-
-

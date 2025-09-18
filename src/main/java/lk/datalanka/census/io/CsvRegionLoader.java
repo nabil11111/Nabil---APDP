@@ -16,19 +16,21 @@ import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 
 /**
- * Loads regions from a CSV file with columns: type,name,population,literacyRate,averageIncome,
+ * Loads regions from a CSV file with columns:
+ * type,name,population,literacyRate,averageIncome,
  * age_0_14,age_15_24,age_25_34,age_35_44,age_45_64,age_65_plus.
  */
 public final class CsvRegionLoader {
 
-    private CsvRegionLoader() {}
+    private CsvRegionLoader() {
+    }
 
     public static List<AbstractRegion> load(Path csv) throws IOException {
         List<AbstractRegion> regions = new ArrayList<>();
         RegionFactory factory = new RegionFactory();
 
         try (Reader reader = Files.newBufferedReader(csv);
-             CSVParser parser = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(reader)) {
+                CSVParser parser = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(reader)) {
             for (CSVRecord r : parser) {
                 String type = r.get("type");
                 String name = r.get("name");
@@ -48,5 +50,3 @@ public final class CsvRegionLoader {
         return regions;
     }
 }
-
-

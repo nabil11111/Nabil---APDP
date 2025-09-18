@@ -22,13 +22,16 @@ public final class AgeBands {
      */
     public static String of(int age) {
         Preconditions.check(age >= 0, "age must be >= 0");
-        if (age <= 14) return BAND_0_14;
-        if (age <= 24) return BAND_15_24;
-        if (age <= 34) return BAND_25_34;
-        if (age <= 44) return BAND_35_44;
-        if (age <= 64) return BAND_45_64;
+        if (age <= 14)
+            return BAND_0_14;
+        if (age <= 24)
+            return BAND_15_24;
+        if (age <= 34)
+            return BAND_25_34;
+        if (age <= 44)
+            return BAND_35_44;
+        if (age <= 64)
+            return BAND_45_64;
         return BAND_65_PLUS;
     }
 }
-
-

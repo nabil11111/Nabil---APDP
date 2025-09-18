@@ -51,10 +51,12 @@ class AgeGroupAnalysisTest {
 
     private Map<String, Integer> ag(int a, int b, int c, int d, int e, int f) {
         Map<String, Integer> m = new LinkedHashMap<>();
-        m.put("0-14", a); m.put("15-24", b); m.put("25-34", c);
-        m.put("35-44", d); m.put("45-64", e); m.put("65+", f);
+        m.put("0-14", a);
+        m.put("15-24", b);
+        m.put("25-34", c);
+        m.put("35-44", d);
+        m.put("45-64", e);
+        m.put("65+", f);
         return m;
     }
 }
-
-

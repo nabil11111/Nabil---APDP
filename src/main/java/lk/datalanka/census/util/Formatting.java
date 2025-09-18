@@ -8,7 +8,8 @@ import java.math.RoundingMode;
  */
 public final class Formatting {
 
-    private Formatting() {}
+    private Formatting() {
+    }
 
     /**
      * Formats a fractional value as percentage string with two decimals.
@@ -29,5 +30,3 @@ public final class Formatting {
                 .doubleValue();
     }
 }
-
-

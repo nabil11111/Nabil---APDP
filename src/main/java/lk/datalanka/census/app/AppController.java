@@ -26,7 +26,8 @@ public final class AppController {
         return regions;
     }
 
-    public void addRegion(String type, String name, int population, double literacy, double income, Map<String, Integer> ageGroups) {
+    public void addRegion(String type, String name, int population, double literacy, double income,
+            Map<String, Integer> ageGroups) {
         regions.add(regionFactory.createRegion(type, name, population, literacy, income, ageGroups));
     }
 
@@ -82,5 +83,3 @@ public final class AppController {
         runIncomeAnalysis();
     }
 }
-
-

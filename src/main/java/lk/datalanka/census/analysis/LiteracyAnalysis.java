@@ -47,5 +47,3 @@ public final class LiteracyAnalysis implements AnalysisStrategy {
         return result;
     }
 }
-
-

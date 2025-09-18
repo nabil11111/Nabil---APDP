@@ -14,8 +14,8 @@ public final class IncomeSummaryResult {
     private final List<String> rankedRegions;
 
     public IncomeSummaryResult(double nationalWeightedAverageIncome,
-                               Map<String, Double> averageIncomeByRegion,
-                               List<String> rankedRegions) {
+            Map<String, Double> averageIncomeByRegion,
+            List<String> rankedRegions) {
         this.nationalWeightedAverageIncome = nationalWeightedAverageIncome;
         this.averageIncomeByRegion = Collections.unmodifiableMap(new LinkedHashMap<>(averageIncomeByRegion));
         this.rankedRegions = List.copyOf(rankedRegions);
@@ -33,5 +33,3 @@ public final class IncomeSummaryResult {
         return rankedRegions;
     }
 }
-
-

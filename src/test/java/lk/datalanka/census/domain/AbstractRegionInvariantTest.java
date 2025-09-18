@@ -46,5 +46,3 @@ class AbstractRegionInvariantTest {
                 .isInstanceOf(IllegalArgumentException.class);
     }
 }
-
-
